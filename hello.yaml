@@ -1,0 +1,19 @@
+"apple" : "i am a red fruit" 
+1: "this is rathan's roll number" 
+---
+  # lists
+  - mango
+  - banana
+  - Apple
+---
+#the below following are array representations
+  cities:
+  - new delhi
+  - mumbai
+  - chennai
+  - bangalore
+---
+ cities:[new delhi,mumbai]
+---
+  {mango: "yellow",age: "56"}
+...

@@ -1,0 +1,88 @@
+student: !!seq
+  - marks
+  - name
+  - roll_no
+
+#we can write in this format also
+student1: [marks, name, roll_no]
+
+#some of the keys of the seq will be empty that is known as the sparse key
+
+sparse seq:
+  - hey
+  - how
+  -
+  - Null
+  - fine
+
+  #nested sequences
+  - - mango
+    - orange
+    - pineapple
+  - - marks
+    - name
+    - roll_no
+
+---
+#key: value pairs are called maps example hashmaps
+!!map #nested mapping: map within map
+
+name: rathan
+role:
+  age: 34
+  job: software engineer
+---
+# the above can be written as the below
+name: rathan
+role: { age: 34, job: software engineer }
+---
+#one key to have multiple value that is known as pairs
+#pairs: keys may have duplicate values
+# !! pairs
+pair example: !!pairs
+  - job: student
+  - job: software engineer
+---
+#same as
+pair example: !!pairs [job: student, job: software engineer]
+#these will be stored as an array of hashtables
+---
+#itwill allow you to have unique values !!set
+
+names: !!set
+? rathan
+? rahul
+? dhivya
+? sugi
+
+#dictionary !!omap in dictionary one key can have a sequence
+
+people: !!omap
+  - rathan:
+      age: 34
+      height: 256
+      job: software engineer
+  - rahul:
+      age: 37
+      height: 249
+      job: software engineer
+
+# reusing some properties using anchors
+liking of person: &like #anchors
+   favfruit: mango
+   dislikes: grapes
+person1:
+    name : rahul
+    <<: *like
+
+person2:
+    name : rathan
+    <<: *like
+    dislikes: berries #overrides
+---
+#the above will look like below
+person2:
+    name : sugi
+    favfruit: mango
+    dislikes: berries
+

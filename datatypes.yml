@@ -1,0 +1,56 @@
+#string variable
+name: rathan vishnu
+fruit: "apple"
+job: 'Software Engineer'
+---
+bio: |
+hey iam rathan i am learning devops.
+so i am intrested to learn
+---
+#write a single line in multiplle lines
+message: >
+this will 
+all be 
+in one simple line
+---
+#same as
+#key: value
+message: this will all be in one single line
+
+number: 132321
+marks: 99.78
+booleanValue: No #n,N,false,False,FALSE
+#same thing for true also->  yes,y,True,TRUE,Y
+
+#specifing datatype
+zero: !!int 0
+positivenum: !!int 23
+negativenum: !!int -23
+binarynum: !!binary 0b1101
+octalnum: !!int 06453
+hexa: !!int 0x23
+commaseparated: !!int +540_000 #540,000
+Exaponentialnumbers: 1.6453E89
+
+
+#floating point numbers
+mark: !!float 23.45
+infinity: !!float .inf
+not a number: !!float .nan
+s: !!str this is rathan
+boolean: !!bool true
+
+
+#null
+surname: !!null Null #null,NULL,~ these can be used as null values
+~: this is a null key
+
+# dates and time 
+date: !!timestamp 2003-06-07
+indiatime: 2001-12-15T02:59:43.10 +5:30
+no time zone: 2001-12-15T02:59:43.10 
+
+
+
+
+
