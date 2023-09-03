@@ -50,10 +50,10 @@ pair example: !!pairs [job: student, job: software engineer]
 #itwill allow you to have unique values !!set
 
 names: !!set
-? rathan
-? rahul
-? dhivya
-? sugi
+ ? rathan
+ ? rahul
+ ? dhivya
+ ? sugi
 
 #dictionary !!omap in dictionary one key can have a sequence
 

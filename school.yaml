@@ -1,0 +1,9 @@
+---
+school:
+- name: dfs
+  principal: velu
+  Students:
+  - rno: 2001
+    stname: rathan
+    marks: 78
+

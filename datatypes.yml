@@ -4,14 +4,14 @@ fruit: "apple"
 job: 'Software Engineer'
 ---
 bio: |
-hey iam rathan i am learning devops.
-so i am intrested to learn
+ hey iam rathan i am learning devops.
+ so i am intrested to learn
 ---
 #write a single line in multiplle lines
 message: >
-this will 
-all be 
-in one simple line
+ this will 
+ all be 
+ in one simple line
 ---
 #same as
 #key: value
@@ -29,7 +29,7 @@ negativenum: !!int -23
 binarynum: !!binary 0b1101
 octalnum: !!int 06453
 hexa: !!int 0x23
-commaseparated: !!int +540_000 #540,000
+# commaseparated: !!int 540000 #540,000
 Exaponentialnumbers: 1.6453E89
 
 
